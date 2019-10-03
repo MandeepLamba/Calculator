@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="160dip"
+        android:gravity="right"
+        android:maxLength="10"
+        android:padding="8sp"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Button 1-->
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="0dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/txt1"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="1"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt4"
+        app:layout_constraintEnd_toStartOf="@id/bt2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--Button 2-->
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="120dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/txt1"
+        android:layout_toRightOf="@id/bt1"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="2"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt5"
+        app:layout_constraintEnd_toStartOf="@+id/bt3"
+        app:layout_constraintStart_toEndOf="@+id/bt1"
+        tools:layout_editor_absoluteX="88dp" />
+
+    <!--Button 3-->
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="0dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/txt1"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="3"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/bt2"
+        app:layout_constraintEnd_toStartOf="@id/bt_clr"
+        app:layout_constraintBottom_toTopOf="@id/bt6"/>
+
+    <!--Button 4-->
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/bt1"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="4"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt7"
+        app:layout_constraintEnd_toStartOf="@+id/bt5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--Button 5-->
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="0dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/bt1"
+        android:layout_toRightOf="@id/bt4"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="5"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt8"
+        app:layout_constraintEnd_toStartOf="@+id/bt6"
+        app:layout_constraintStart_toEndOf="@+id/bt4" />
+
+    <!--Button 6-->
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="0dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/bt1"
+        android:layout_toRightOf="@id/bt5"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="6"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt9"
+        app:layout_constraintEnd_toStartOf="@+id/bt_mul"
+        app:layout_constraintStart_toEndOf="@+id/bt5" />
+
+    <!--Button 7-->
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/bt4"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="7"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/dot"
+        app:layout_constraintEnd_toStartOf="@+id/bt8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--Button 8-->
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="0dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/bt4"
+        android:layout_toRightOf="@id/bt7"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="8"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt0"
+        app:layout_constraintEnd_toStartOf="@+id/bt9"
+        app:layout_constraintStart_toEndOf="@+id/bt7" />
+
+    <!--Button 9-->
+    <Button
+        android:id="@+id/bt9"
+        android:layout_width="0dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/bt4"
+        android:layout_toRightOf="@id/bt8"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="9"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/eq"
+        app:layout_constraintEnd_toStartOf="@+id/bt_sub"
+        app:layout_constraintStart_toEndOf="@+id/bt8" />
+
+
+    <!--Button Dot-->
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="0dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/bt7"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="."
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--Button 0-->
+    <Button
+        android:id="@+id/bt0"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/bt8"
+        android:layout_toRightOf="@id/bt7"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="0"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eq"
+        app:layout_constraintStart_toEndOf="@+id/dot" />
+
+
+    <!--Button Equal-->
+    <Button
+        android:id="@+id/eq"
+        android:layout_width="0dp"
+        android:layout_height="100dip"
+        android:layout_below="@id/bt7"
+        android:layout_toRightOf="@id/bt0"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        android:text="="
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_plus"
+        app:layout_constraintStart_toEndOf="@+id/bt0" />
+
+
+    <!--Button Clear-->
+    <Button
+        android:id="@+id/bt_clr"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txt1"
+        android:background="#bbbbbb"
+        android:padding="20dp"
+        android:text="C"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/bt_mul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt3"/>
+
+
+    <!--Button Divide-->
+    <Button
+        android:id="@+id/bt_div"
+        android:layout_width="0dp"
+        android:layout_height="70dip"
+        android:layout_below="@id/bt_clr"
+        android:layout_toRightOf="@id/bt3"
+        android:background="#bbbbbb"
+        android:padding="20dp"
+        android:text="÷"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt9" />
+
+
+    <!--Button Multiply-->
+    <Button
+        android:id="@+id/bt_mul"
+        android:layout_width="0dp"
+        android:layout_height="70dip"
+        android:layout_below="@id/bt_div"
+        android:layout_toRightOf="@id/bt6"
+        android:background="#bbbbbb"
+        android:padding="20dp"
+        android:text="×"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_div"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt6" />
+
+
+    <!--Button Subtract-->
+    <Button
+        android:id="@+id/bt_sub"
+        android:layout_width="0dp"
+        android:layout_height="70dip"
+        android:layout_below="@id/bt_mul"
+        android:layout_toRightOf="@id/bt3"
+        android:background="#bbbbbb"
+        android:padding="20dp"
+        android:text="-"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt9" />
+
+
+    <!--Button Plus-->
+    <Button
+        android:id="@+id/bt_plus"
+        android:layout_width="0dp"
+        android:layout_height="90dip"
+        android:layout_below="@id/bt_sub"
+        android:layout_toRightOf="@id/bt3"
+        android:background="#bbbbbb"
+        android:padding="20dp"
+        android:text="+"
+        android:textColor="#444444"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eq" />
+
+
+</android.support.constraint.ConstraintLayout>
