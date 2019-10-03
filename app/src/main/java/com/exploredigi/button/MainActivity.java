@@ -176,6 +176,7 @@ float int1,ans;
         });
 
 
+        
         eq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
